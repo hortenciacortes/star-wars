@@ -5,4 +5,25 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.grid-pattern {
+  display                  : grid;
+  grid-template            : auto / 1fr 1200px 1fr;
+}
+
+@media (max-width          : 1350px) {
+  .grid-pattern {
+    grid-template          : auto / 1fr 80% 1fr;
+  }
+}
+
+@media (max-width          : 600px) {
+  .grid-pattern {
+    grid-template          : auto / 1fr 92% 1fr;
+  }
 }
