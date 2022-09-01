@@ -11,6 +11,15 @@
   background-color: #242424;
 }
 
+.cointainer {
+  grid-column: 2;
+  padding: 80px 0px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
 .grid-pattern {
   display                  : grid;
   grid-template            : auto / 1fr 1200px 1fr;
