@@ -27,8 +27,8 @@ export function Personages() {
       <div className="cointainer">
         <h2>Personagens do universo de Star Wars ({people.length}):</h2>
         <ul>
-          {people.map((name, index) => (
-            <li key={index}>{name.name}</li>
+          {people.map(item => (
+            <li key={item.name}>{item.name}</li>
           ))}
         </ul>
       </div>
