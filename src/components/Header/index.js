@@ -13,7 +13,7 @@ export function Header() {
           />
         </a>
         
-        <a href="/" className='login'>
+        <a href="#" className='login'>
           Login 
           <img src={login} alt="Seta amarela sugerindo uma entrada (login)" />
         </a>
