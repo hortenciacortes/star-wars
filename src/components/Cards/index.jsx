@@ -59,7 +59,7 @@ export function Cards({ personagens }) {
         <div className="card-small card-contain">
           <a href="#section-starships">
             <div className="card-info">
-              <p>Naves</p>
+              <p>Aeronaves</p>
               <h4 id="starships">0</h4>
             </div>
             <img src={nave} alt="Ícone de uma nave espacial" />

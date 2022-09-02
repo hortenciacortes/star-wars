@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card-contain{
@@ -13,6 +15,7 @@
   background-color: rgba(255, 255, 255, -3.175);
   box-shadow: 0 0px 10px rgb(225, 181, 49);
   border-radius: 8px;
+  min-width: 215px;
 }
 
 .card-contain a {
@@ -44,4 +47,18 @@
 .card-contain img {
   background-color: transparent;
   color: #FFE81F;
+}
+
+@media (max-width: 520px) {
+  .card-double {
+    flex-direction: column;
+
+  }
+  .card-contain #linha-vertical{
+    width: 100px;
+    height: 0px;
+    border-right: none;
+    border-bottom: 1px solid rgb(225, 181, 49);
+    margin: 10px 0px;
+  }
 }
