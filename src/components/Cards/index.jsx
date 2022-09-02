@@ -7,8 +7,8 @@ import nave from '../../assets/nave.svg';
 import species from '../../assets/species.svg';
 
 export function Cards({ personagens }) {
-
   const url = ['people/', 'species/', 'planets/', 'starships/']
+  
   useEffect(() => {
     url.forEach(item => {
       swapi.get(`/${item}`)
@@ -21,6 +21,7 @@ export function Cards({ personagens }) {
       .catch((err) => console.error(err));
     })
   }, [])
+
   return(
     <section className='grid-pattern'>
       <div className="cards container">
@@ -39,7 +40,7 @@ export function Cards({ personagens }) {
           <a href="#section-species">
             <div className="card-info">
               <p>Espécieis</p>
-              <h4 id="species"></h4>
+              <h4 id="species">0</h4>
             </div>
             <img src={species} alt="Ícone de espécieis" />
           </a>
@@ -49,7 +50,7 @@ export function Cards({ personagens }) {
           <a href="#section-planets">
             <div className="card-info">
               <p>Planetas</p>
-              <h4 id="planets"></h4>
+              <h4 id="planets">0</h4>
             </div>
             <img src={planetas} alt="ícone de um planeta" />
           </a>
@@ -59,7 +60,7 @@ export function Cards({ personagens }) {
           <a href="#section-starships">
             <div className="card-info">
               <p>Naves</p>
-              <h4 id="starships"></h4>
+              <h4 id="starships">0</h4>
             </div>
             <img src={nave} alt="Ícone de uma nave espacial" />
           </a>

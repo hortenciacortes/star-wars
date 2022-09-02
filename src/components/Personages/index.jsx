@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { swapi } from "../../server/api";
-import './styles.css';
 import { Carousel } from "../Carousel";
 
 export function Personages() {

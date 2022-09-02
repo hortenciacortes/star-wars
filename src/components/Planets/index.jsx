@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Carousel } from "../Carousel";
 import { swapi } from "../../server/api";
-import './styles.css';
 
 export function Planets() {
   const [planets, setPlanets] = useState([]);
