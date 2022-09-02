@@ -1,0 +1,14 @@
+h2 span {
+  color: #FFE81F;
+}
+
+table.table {
+  margin: auto;
+  font-size: 18px;
+}
+
+@media (min-width: 1500px) {
+  table.table {
+    width: 80%;
+  }
+}

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { swapi } from "../../server/api";
+import loading from '../../assets/loading.gif';
 import './styles.css';
 
 export function Starships() {
@@ -24,14 +25,22 @@ export function Starships() {
   
   return(
     <section className="grid-pattern">
-      <div className="cointainer">
+      <div className="container">
         <h2>Naves espaciais do universo de Star Wars ({starships.length}):</h2>
         <ul>
           {starships.map(item => (
-            <li key={item.name}>{item.name}</li>
+            <a href={`/details#${item.name}`} key={item.name}>
+              <li>{item.name}</li>
+            </a>
           ))}
         </ul>
       </div>
+
+      {starships.length <= 0 && 
+        <div className="loading">
+          <img src={loading} alt="Carregando" />
+        </div>
+      }
     </section>
   )
 }

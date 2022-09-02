@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { swapi } from "../../server/api";
+import loading from '../../assets/loading.gif';
 import './styles.css';
 
 export function Personages() {
@@ -24,7 +25,7 @@ export function Personages() {
   
   return(
     <section className="grid-pattern">
-      <div className="cointainer">
+      <div className="container">
         <h2>Personagens do universo de Star Wars ({people.length}):</h2>
         <ul>
           {people.map(item => (
@@ -32,6 +33,12 @@ export function Personages() {
           ))}
         </ul>
       </div>
+
+      {people.length <= 0 && 
+        <div className="loading">
+          <img src={loading} alt="Carregando" />
+        </div>
+      }
     </section>
   )
 }
