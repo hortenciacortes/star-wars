@@ -82,3 +82,16 @@ li {
     grid-template          : auto / 1fr 92% 1fr;
   }
 }
+
+@media (max-width: 450px){
+  * {
+    font-size: .8rem;
+  }
+  .carousel-item ul {
+    grid-template-columns: 230px;
+    padding-left: 0px;
+  }
+  li {
+    text-align: center;
+  }
+}
