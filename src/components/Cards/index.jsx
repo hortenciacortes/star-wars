@@ -26,11 +26,13 @@ export function Cards({ personagens }) {
       <div className="cards container">
 
         <div className="card-small card-contain">
-          <div className="card-info">
-            <p>Personagens</p>
-            <h4 id="people">{personagens}</h4>
-          </div>
-          <img src={iconPersonagens} alt="Ícone da mascara do darth vader" />
+          <a href="#personages">
+            <div className="card-info">
+              <p>Personagens</p>
+              <h4 id="people">{personagens}</h4>
+            </div>
+            <img src={iconPersonagens} alt="Ícone da mascara do darth vader" />
+          </a>
         </div>
 
         <div className="card-double card-contain">
@@ -50,11 +52,13 @@ export function Cards({ personagens }) {
         </div>
 
         <div className="card-small card-contain">
-          <div className="card-info">
-            <p>Naves</p>
-            <h4 id="starships"></h4>
-          </div>
-          <img src={nave} alt="Ícone de uma nave espacial" />
+          <a href="#section-starsphips">
+            <div className="card-info">
+              <p>Naves</p>
+              <h4 id="starships"></h4>
+            </div>
+            <img src={nave} alt="Ícone de uma nave espacial" />
+          </a>
         </div>
       </div>
     </section>

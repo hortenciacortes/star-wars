@@ -15,6 +15,10 @@
   border-radius: 8px;
 }
 
+.card-contain a {
+  display: flex;
+}
+
 .card-contain p{
   font-size: 1.4rem;
 }

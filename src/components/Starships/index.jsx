@@ -24,7 +24,7 @@ export function Starships() {
   
   
   return(
-    <section className="grid-pattern">
+    <section className="grid-pattern" id="section-starsphips">
       <div className="container">
         <h2>Naves espaciais do universo de Star Wars ({starships.length}):</h2>
         <ul>
