@@ -26,7 +26,7 @@ export function Cards({ personagens }) {
       <div className="cards container">
 
         <div className="card-small card-contain">
-          <a href="#personages">
+          <a href="#section-personages">
             <div className="card-info">
               <p>Personagens</p>
               <h4 id="people">{personagens}</h4>
@@ -36,23 +36,27 @@ export function Cards({ personagens }) {
         </div>
 
         <div className="card-double card-contain">
-          <div className="card-info">
-            <p>Espécieis</p>
-            <h4 id="species"></h4>
-          </div>
-          <img src={species} alt="Ícone de espécieis" />
+          <a href="#section-species">
+            <div className="card-info">
+              <p>Espécieis</p>
+              <h4 id="species"></h4>
+            </div>
+            <img src={species} alt="Ícone de espécieis" />
+          </a>
 
           <span id="linha-vertical"></span>
 
-          <div className="card-info">
-            <p>Planetas</p>
-            <h4 id="planets"></h4>
-          </div>
-          <img src={planetas} alt="ícone de um planeta" />
+          <a href="#section-planets">
+            <div className="card-info">
+              <p>Planetas</p>
+              <h4 id="planets"></h4>
+            </div>
+            <img src={planetas} alt="ícone de um planeta" />
+          </a>
         </div>
 
         <div className="card-small card-contain">
-          <a href="#section-starsphips">
+          <a href="#section-starships">
             <div className="card-info">
               <p>Naves</p>
               <h4 id="starships"></h4>

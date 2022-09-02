@@ -23,9 +23,8 @@ export function Personages() {
   }, [])
   
   return(
-    <div id="personages">
-      <Carousel arrayItems={people} el={'people'} title='Personagens do universo de Star Wars' />
+    <div id="section-personages">
+      <Carousel arrayItems={people} id={'id-people'} title='Personagens' />
     </div>
-
   )
 }
