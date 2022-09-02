@@ -1,0 +1,43 @@
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-contain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, -3.175);
+  box-shadow: 0 0px 10px rgb(225, 181, 49);
+  border-radius: 8px;
+}
+
+.card-contain p{
+  font-size: 1.4rem;
+}
+
+.card-contain h4{
+  color: rgb(225, 181, 49);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.card-contain img{
+  padding: 0 0 0 .8rem;
+}
+
+.card-contain #linha-vertical{
+  height: 50px;
+  border-right: 1px solid rgb(225, 181, 49);
+  margin: 0 20px 0 20px;
+}
+
+.card-contain .card-info,
+.card-contain .card-info p,
+.card-contain img {
+  background-color: transparent;
+  color: #FFE81F;
+}
