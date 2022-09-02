@@ -39,10 +39,10 @@ export function Cards({ personagens }) {
         <div className="card-double card-contain">
           <a href="#section-species">
             <div className="card-info">
-              <p>Espécieis</p>
+              <p>Espécies</p>
               <h4 id="species">0</h4>
             </div>
-            <img src={species} alt="Ícone de espécieis" />
+            <img src={species} alt="Ícone de espécies" />
           </a>
 
           <span id="linha-vertical"></span>

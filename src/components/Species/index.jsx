@@ -23,7 +23,7 @@ export function Species() {
   
   return(
     <div id="section-species">
-      <Carousel arrayItems={species} id={'id-species'} title='Espécieis' />
+      <Carousel arrayItems={species} id={'id-species'} title='Espécies' />
     </div>
   )
 }
