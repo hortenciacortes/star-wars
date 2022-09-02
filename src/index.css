@@ -87,6 +87,9 @@ li {
   * {
     font-size: .8rem;
   }
+  header .container {
+    flex-direction: column;
+  }
   .carousel-item ul {
     grid-template-columns: 230px;
     padding-left: 0px;
