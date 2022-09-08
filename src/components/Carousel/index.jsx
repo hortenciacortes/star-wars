@@ -30,7 +30,7 @@ export function Carousel({ arrayItems, id, title }) {
         <div className="carousel-inner">
           
           {arrayCount.map((item, i) => (
-            id !== 'id-starships' ?
+            id !== 'section-starships' ?
               <CarouselItem 
                 key={`ci${i}`}
                 arrayItem={arrayItems} 
