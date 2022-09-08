@@ -27,7 +27,7 @@ export function Cards({ personagens }) {
       <div className="cards container">
 
         <div className="card-small card-contain">
-          <a href="#section-personages">
+          <a href="#section-people">
             <div className="card-info">
               <p>Personagens</p>
               <h4 id="people">{personagens}</h4>

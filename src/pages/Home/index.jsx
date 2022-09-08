@@ -11,10 +11,10 @@ export function Home() {
     <>
       <Header />
       <Cards />
-      <Carousel arrayItems={global.people} id={'id-people'} title='Personagens' />
-      <Carousel arrayItems={global.species} id={'id-species'} title='Espécies' />
-      <Carousel arrayItems={global.planets} id={'id-planets'} title='Planetas' />
-      <Carousel arrayItems={global.starships} id={'id-starships'} title='Naves espaciais' />
+      <Carousel arrayItems={global.people} id={'section-people'} title='Personagens' />
+      <Carousel arrayItems={global.species} id={'section-species'} title='Espécies' />
+      <Carousel arrayItems={global.planets} id={'section-planets'} title='Planetas' />
+      <Carousel arrayItems={global.starships} id={'section-starships'} title='Naves espaciais' />
     </>
   );
 }
