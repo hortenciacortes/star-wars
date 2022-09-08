@@ -1,20 +1,20 @@
+import { useContext } from "react";
 import { Cards } from "../../components/Cards";
+import { Carousel } from "../../components/Carousel";
 import { Header } from "../../components/Header";
-import { Personages } from "../../components/Personages";
-import { Planets } from "../../components/Planets";
-import { Species } from "../../components/Species";
-import { Starships } from "../../components/Starships";
-
+import { GlobalContext } from "../../GlobalContext";
 
 export function Home() {
+  const global = useContext(GlobalContext); 
+
   return (
     <>
       <Header />
       <Cards />
-      <Personages />
-      <Species />
-      <Planets />
-      <Starships />
+      <Carousel arrayItems={global.people} id={'id-people'} title='Personagens' />
+      <Carousel arrayItems={global.species} id={'id-species'} title='Espécies' />
+      <Carousel arrayItems={global.planets} id={'id-planets'} title='Planetas' />
+      <Carousel arrayItems={global.starships} id={'id-starships'} title='Naves espaciais' />
     </>
   );
 }
